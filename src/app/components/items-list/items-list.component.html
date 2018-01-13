@@ -1,0 +1,8 @@
+<ul class="bmn_items">
+  <li *ngFor="let item of items">
+    <div class="bmn_item" (click)="showDescription(item)">
+      <p>{{item.name}}</p>
+    </div>
+  </li>
+
+</ul>

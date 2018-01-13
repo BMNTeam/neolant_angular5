@@ -1,0 +1,16 @@
+<div class="bmn_form_wrapper">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div class="form_group">
+      <label for="itemName">item name</label> <br>
+      <input type="text" name="itemName" ngModel id="itemName" required>
+    </div>
+    <div class="form_group">
+      <label for="itemDescription">item description</label> <br>
+      <input type="text" name="itemDescription" ngModel id="itemDescription" required>
+    </div>
+    <div class="form_group">
+      <input type="submit" class="bmn_button bmn_success" [disabled]="f.invalid && !submittable" value="Добавить">
+    </div>
+
+  </form>
+</div>
